@@ -2,11 +2,11 @@ from aiogram.types import KeyboardButton
 
 # MENU BUTTONS
 
-back = KeyboardButton(text="Назад")
-menu = KeyboardButton(text="Меню")
-cancel = KeyboardButton(text="Отмена")
-upload = KeyboardButton(text="Загрузить")
-delete = KeyboardButton(text="Удалить")
+back = KeyboardButton(text="Back")
+menu = KeyboardButton(text="Main menu")
+cancel = KeyboardButton(text="Cancel")
+upload = KeyboardButton(text="Upload")
+delete = KeyboardButton(text="Delete")
 
 # IELTS TYPE
 
@@ -14,6 +14,8 @@ reading = KeyboardButton(text="Reading")
 speaking = KeyboardButton(text="Speaking")
 listening = KeyboardButton(text="Listening")
 writing = KeyboardButton(text="Writing")
+
+ielts_types = [reading.text, speaking.text, listening.text, writing.text]
 
 # IELTS LEVEL
 

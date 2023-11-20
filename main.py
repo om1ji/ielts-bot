@@ -1,10 +1,7 @@
-from aiogram import Dispatcher, Bot
 import asyncio
-from settings import bot_token
+from common.common import *
 from handlers import main_handler, file, ielts
 
-bot = Bot(bot_token)
-dp = Dispatcher()
 dp.include_routers(main_handler.router, file.router, ielts.router)
 
 
