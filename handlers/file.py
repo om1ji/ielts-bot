@@ -44,10 +44,10 @@ async def wait_for_upload(message: Message, state: FSMContext):
     await state.set_state(UploadTest.wait_for_test_upload)
 
 
-@router.message(F.text == buttons.back.text)
-async def return_to_choose(message: Message, state: FSMContext):
-    await message.reply("What type of test it is?", reply_markup=keyboards.ielts_types)
-    await state.set_state(UploadTest.wait_for_test_type)
+# @router.message(F.text == buttons.back.text)
+# async def return_to_choose(message: Message, state: FSMContext):
+#     await message.reply("What type of test it is?", reply_markup=keyboards.ielts_types)
+#     await state.set_state(UploadTest.wait_for_test_type)
 
 
 @router.message(UploadTest.wait_for_test_type)
